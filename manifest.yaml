@@ -1,0 +1,42 @@
+version: 0.0.1
+type: plugin
+author: wqangzuoshuai
+name: shenzhu_test
+label:
+  en_US: shenzhu_test
+  ja_JP: shenzhu_test
+  zh_Hans: shenzhu_test
+  pt_BR: shenzhu_test
+description:
+  en_US: test
+  ja_JP: test
+  zh_Hans: test
+  pt_BR: test
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/google.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-03-29T10:07:06.797015+08:00
+privacy: PRIVACY.md
+verified: false
